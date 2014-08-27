@@ -1,0 +1,33 @@
+﻿doctype html
+html(lang="en")
+  head
+    meta(charset='utf-8')
+
+    title 360 Lycée de l'île de Nantes
+
+    script(src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv-printshiv.min.js")
+
+    script(src="viewer/embedpano.js")
+    script(src="js/vendor.min.js")
+
+    <!--[if !IE]><!--><script src="js/hammer.min.js"></script><!--<![endif]-->
+    link(rel="stylesheet", href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,300italic,500,700,900")
+    link(rel="stylesheet", href="css/reset.css")
+    link(rel="stylesheet", href="css/style.css")
+
+    script videojs.options.flash.swf = "videojs/video-js.swf";
+
+    
+    meta(content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0",name="viewport")    
+
+  body
+    section.container
+        include static_menu/menu
+        include static_sidebar/sidebar
+        include page_home/home
+        include page_video/video
+
+    script(src="js/app.min.js")
+
+
+    
