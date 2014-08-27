@@ -1,0 +1,44 @@
+<krpano>
+
+	<!-- <include url="panos-include.xml" /> -->
+	
+	<!-- pano image -->
+	<preview url="../img/panoramics/pano3/preview.jpg" />
+	<image>
+		<cube url="../img/panoramics/pano3/pano_%s.jpg" />
+	</image>
+	
+	<!-- view settings -->
+	<view hlookat="130" vlookat="0" fovtype="MFOV" fov="100" fovmin="50" fovmax="150" />
+	
+	<layer name="pano1"
+	   url="../viewer/plugins/textfield.swf"
+	   align="lefttop" x="17" y="0"
+	   html="Vue panoramique drone"
+	   css="color:#FFFFFF;font-size:18px;font-weight:100;"
+	    autowidth="auto"
+	    autoheight="auto"
+	    wordwrap="true"
+	    background="true"
+	    backgroundcolor="0x000000"
+	    backgroundalpha="0.6"
+	    textcolor="0x000000"
+	    parent="hotspot[pano1]" 
+	    onclick="spotClick();"
+	    padding="7"
+	   />
+
+	<hotspot name="pano1"
+	 	style="spotcorner"
+	 	distorted="false"
+	 	width="17"
+	 	height="34"
+	 	edge="lefttop"
+	 	ath="-40"
+	 	atv="-30" 
+	 	alpha="1"
+	 	onclick="spotClick();"
+	 	/>
+
+	
+</krpano>
