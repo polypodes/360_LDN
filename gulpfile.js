@@ -20,8 +20,24 @@ var filesize = require('gulp-filesize');
 var htmlhint = require("gulp-htmlhint");
 // var imageop = require('gulp-image-optimization');
 var imagemin = require('gulp-imagemin');
+var browsersync = require('browser-sync');
 
-/* ------------- */
+/* ------------ */
+/* BROWSER SYNC */
+/* ------------ */
+
+gulp.task('browser-sync', function () {
+   var files = [
+      'dist/**/*.html'
+   ];
+
+   browsersync.init(files, {
+      server: {
+         baseDir: 'dist/'
+      }
+   });
+});
+
 /* DEFAULT TASKS */
 /* ------------- */
 

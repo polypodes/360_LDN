@@ -6,6 +6,9 @@
 	<preview url="../img/panoramics/pano1/preview.jpg" />
 	<image>
 		<cube url="../img/panoramics/pano1/pano_%s.jpg" />
+		<mobile>
+			<cube url="../img/panoramics/pano1/mobile_%s.jpg" />
+		</mobile>
 	</image>
 	
 	<!-- view settings -->
@@ -15,41 +18,13 @@
 		<!-- looktohotspot(get(name), 25, smooth(800,800,800)); -->
 		js(changeSpot(get(name)));
 	</action>
-	
-	<style name="hotspot_ani_white" editorplugin_ishotspotstyle="true" url="../img/spot.png" />
-	<style name="spotcorner" editorplugin_ishotspotstyle="true" url="../img/spotimg.png" />
 
-	<action name="hotspot_animate">
-		if(loaded,
-			inc(frame,1,get(frames),0);
-			mul(ypos,frame,frameheight);
-			txtadd(crop,'0|',get(ypos),'|',get(framewidth),'|',get(frameheight));
-			delayedcall(0.05, hotspot_animate() );
-		  );
-	</action>	
-
-	<layer name="pano2"
-       url="../viewer/plugins/textfield.swf"
-       align="lefttop" x="17" y="0"
-       html="Exterieur"
-       css="color:#FFFFFF;font-size:18px;font-weight:100;"
-       autowidth="auto"
-       autoheight="auto"
-       wordwrap="true"
-       background="true"
-       backgroundcolor="0x000000"
-       backgroundalpha="0.6"
-       textcolor="0x000000"
-       parent="hotspot[pano2]" 
-       onclick="spotClick();"
-       padding="7"
-       />
 
     <hotspot name="pano2"
-	 	style="spotcorner"
+	 	url="../img/text_exterieur.png"
 	 	distorted="false"
-	 	width="17"
-	 	height="34"
+	 	width="152"
+	 	height="30"
 	 	edge="lefttop"
 	 	ath="-30"
 	 	atv="10" 
@@ -57,28 +32,11 @@
 	 	onclick="spotClick();"
 	 	/>
 
-	<layer name="pano3"
-       url="../viewer/plugins/textfield.swf"
-       align="lefttop" x="17" y="0"
-       html="Salle de classe"
-       css="color:#FFFFFF;font-size:18px;font-weight:100;"
-       autowidth="auto"
-       autoheight="auto"
-       wordwrap="true"
-       background="true"
-       backgroundcolor="0x000000"
-       backgroundalpha="0.6"
-       textcolor="0x000000"
-       parent="hotspot[pano3]" 
-       onclick="spotClick();"
-       padding="7"
-       />
-
 	<hotspot name="pano3"
-	 	style="spotcorner"
+	 	url="../img/text_salledesport.png"
 	 	distorted="false"
-	 	width="17"
-	 	height="34"
+	 	width="206"
+	 	height="30"
 	 	edge="lefttop"
 	 	ath="10"
 	 	atv="-30" 
@@ -86,28 +44,11 @@
 	 	onclick="spotClick();"
 	 	/>
 
-	<layer name="pano4"
-       url="../viewer/plugins/textfield.swf"
-       align="lefttop" x="17" y="0"
-       html="Salle de sport"
-       css="color:#FFFFFF;font-size:18px;font-weight:100;"
-       autowidth="auto"
-       autoheight="auto"
-       wordwrap="true"
-       background="true"
-       backgroundcolor="0x000000"
-       backgroundalpha="0.6"
-       textcolor="0x000000"
-       parent="hotspot[pano4]" 
-       onclick="spotClick();"
-       padding="7"
-       />
-
 	<hotspot name="pano4"
-	 	style="spotcorner"
+	 	url="../img/text_salledecours.png"
 	 	distorted="false"
-	 	width="17"
-	 	height="34"
+	 	width="212"
+	 	height="30"
 	 	edge="lefttop"
 	 	ath="50"
 	 	atv="0" 

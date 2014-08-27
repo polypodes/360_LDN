@@ -100,7 +100,7 @@ var krpano = document.getElementById("krpanoSWFObject");
 var panosTitles = {
 	'pano1':
 		{
-			title:"Vue panoramique",
+			title:"Rue centrale",
 			ltx:0,
 			lty:0
 		},
@@ -184,5 +184,5 @@ $(".sidebar__panoslist__item.video").on("click",function(){
 	player.currentTime(0);
 	player.play();
 });
- 
+
 // stopVideo();
