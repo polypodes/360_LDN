@@ -185,4 +185,4 @@ $(".sidebar__panoslist__item.video").on("click",function(){
 	player.play();
 });
 
-stopVideo();
+// stopVideo();
