@@ -31,15 +31,14 @@ gulp.task('jade', function() {
     // Pages to compile
     var pages = ['home'];
 
-    for(var i in pages){
         gulp.src('src/jade/index.jade')
             .pipe(jade({
                 pretty : true,
-                locals : { page : pages[i] }
+                locals : { page : "home" }
             }))
-            .pipe(rename(pages[i]+".html"))
+            .pipe(rename("index.html"))
             .pipe(gulp.dest('dist/'))
-    }
+    
 });
 
 // COMPILE LESS FILES
