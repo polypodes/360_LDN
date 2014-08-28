@@ -1,5 +1,4 @@
-<krpano version="1.17">
-
+<krpano>
 	<!-- <include url="panos-include.xml" /> -->
 	
 	<!-- pano image -->
@@ -12,7 +11,7 @@
 	</image>
 	
 	<!-- view settings -->
-	<view hlookat="0" vlookat="0" fovtype="MFOV" fov="100" fovmin="50" fovmax="150" />
+	<view hlookat="180" vlookat="0" fovtype="MFOV" fov="100" fovmin="50" fovmax="150" />
 	
 	<action name="spotClick">
 		<!-- looktohotspot(get(name), 25, smooth(800,800,800)); -->
@@ -26,8 +25,8 @@
 	 	width="152"
 	 	height="30"
 	 	edge="lefttop"
-	 	ath="-30"
-	 	atv="10" 
+	 	ath="145"
+	 	atv="0" 
 	 	alpha="1"
 	 	onclick="spotClick();"
 	 	/>
@@ -38,8 +37,8 @@
 	 	width="206"
 	 	height="30"
 	 	edge="lefttop"
-	 	ath="10"
-	 	atv="-30" 
+	 	ath="52"
+	 	atv="1" 
 	 	alpha="1"
 	 	onclick="spotClick();"
 	 	/>
@@ -50,8 +49,8 @@
 	 	width="212"
 	 	height="30"
 	 	edge="lefttop"
-	 	ath="50"
-	 	atv="0" 
+	 	ath="80"
+	 	atv="-3" 
 	 	alpha="1"
 	 	onclick="spotClick();"
 	 	/>

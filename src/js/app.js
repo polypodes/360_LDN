@@ -101,7 +101,7 @@ var panosTitles = {
 	'pano1':
 		{
 			title:"Rue centrale",
-			ltx:0,
+			ltx:90,
 			lty:0
 		},
 	'pano2':
@@ -124,7 +124,7 @@ var panosTitles = {
 		}
 };
 
-function loadpano(xmlname,ltx,lty)
+function loadpano(xmlname)
 {
 	if(actualpano==xmlname)
 		return false;
@@ -147,8 +147,7 @@ function loadpano(xmlname,ltx,lty)
 	// Move the sidebar
 	// $('.menu__button').trigger('click')
 	krpano.call("loadpano(" + xmlname + ".xml, null, MERGE, BLEND(0.8));");
-	if(xmlname!="pano1")
-		krpano.call("lookto("+panosTitles[xmlname].ltx+","+panosTitles[xmlname].lty+",100,tween(easeOutQuad,3),true,true)");
+	krpano.call("lookto("+panosTitles[xmlname].ltx+","+panosTitles[xmlname].lty+",100,tween(easeOutQuad,3),true,true)");
 }
 
 $('.pano_item').on('click',function(){
@@ -191,4 +190,5 @@ $(".sidebar__panoslist__item.video").on("click",function(){
 	player.play();
 });
 
-// stopVideo();
+krpano.call("lookat("+panosTitles['pano1'].ltx+","+panosTitles['pano1'].lty+")");
+stopVideo();

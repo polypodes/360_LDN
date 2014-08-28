@@ -154,6 +154,12 @@ gulp.task('watch', function() {
     // Livereload server
     var liveServer = liveReload();
 
+    gulp.watch('dist/xml/**/*.*')
+    .on('change', function(event){
+        liveServer.changed(event.path);
+        console.log('Reloading for XML');
+    });
+
     gulp.watch('src/jade/**/*.*', ['jade'])
     .on('change', function(event){
         liveServer.changed(event.path);
