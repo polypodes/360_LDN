@@ -138,6 +138,12 @@ function loadpano(xmlname,ltx,lty)
 
 	
 	$('.titleview').text(panosTitles[xmlname].title);
+	$('.titleview').css('animation','none');
+	$('.titleview').hide();
+	setTimeout(function(){
+		$('.titleview').show();
+		$('.titleview').css('animation','fadeIn 0.4s');
+	},100);
 	// Move the sidebar
 	// $('.menu__button').trigger('click')
 	krpano.call("loadpano(" + xmlname + ".xml, null, MERGE, BLEND(0.8));");
