@@ -31,7 +31,7 @@
 	 	onclick="spotClick();"
 	 	/>
 
-	<hotspot name="pano3"
+	<hotspot name="pano4"
 	 	url="../img/text_salledesport.png"
 	 	distorted="false"
 	 	width="206"
@@ -43,7 +43,7 @@
 	 	onclick="spotClick();"
 	 	/>
 
-	<hotspot name="pano4"
+	<hotspot name="pano3"
 	 	url="../img/text_salledecours.png"
 	 	distorted="false"
 	 	width="212"
