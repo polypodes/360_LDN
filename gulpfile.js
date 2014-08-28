@@ -98,8 +98,7 @@ gulp.task('vendor', function() {
     var vendorFiles = [
         'src/js/vendor/jquery.min.js',
         'src/js/vendor/modernizr.min.js',
-        'src/js/vendor/video.js',
-        'src/js/vendor/bigvideo.js'
+        'src/js/vendor/video.js'
     ];
 
     return gulp.src(vendorFiles)
