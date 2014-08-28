@@ -191,4 +191,6 @@ $(".sidebar__panoslist__item.video").on("click",function(){
 });
 
 krpano.call("lookat("+panosTitles['pano1'].ltx+","+panosTitles['pano1'].lty+")");
-stopVideo();
+
+// loadpano('pano4')
+// stopVideo();

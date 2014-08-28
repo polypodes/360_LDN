@@ -21,8 +21,8 @@
 	 	width="223"
 	 	height="35"
 	 	edge="lefttop"
-	 	ath="-40"
-	 	atv="-30" 
+	 	ath="-20"
+	 	atv="-5" 
 	 	alpha="1"
 	 	onclick="spotClick();"
 	 	/>
